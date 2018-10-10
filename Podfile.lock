@@ -1,0 +1,33 @@
+PODS:
+  - Hero (1.4.0)
+  - ReachabilitySwift (4.1.0)
+  - Whisper (6.0.2)
+
+DEPENDENCIES:
+  - Hero (from `https://github.com/HeroTransitions/Hero.git`, branch `swift-4.2`)
+  - ReachabilitySwift
+  - Whisper
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ReachabilitySwift
+    - Whisper
+
+EXTERNAL SOURCES:
+  Hero:
+    :branch: swift-4.2
+    :git: https://github.com/HeroTransitions/Hero.git
+
+CHECKOUT OPTIONS:
+  Hero:
+    :commit: 85be93ff80247296ee17f340bef73cfeb18c9fa0
+    :git: https://github.com/HeroTransitions/Hero.git
+
+SPEC CHECKSUMS:
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  Whisper: 169760fc4bab0abf24d5529f9276f95c25cf1025
+
+PODFILE CHECKSUM: dfd49b98e872b56209af6b5cbd7f6efffe4bdabf
+
+COCOAPODS: 1.5.3
