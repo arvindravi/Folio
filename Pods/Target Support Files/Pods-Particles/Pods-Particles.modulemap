@@ -1,6 +1,0 @@
-framework module Pods_Particles {
-  umbrella header "Pods-Particles-umbrella.h"
-
-  export *
-  module * { export * }
-}

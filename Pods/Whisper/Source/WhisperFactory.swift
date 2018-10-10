@@ -28,11 +28,16 @@ class WhisperFactory: NSObject {
 
   override init() {
     super.init()
-    NotificationCenter.default.addObserver(self, selector: #selector(WhisperFactory.orientationDidChange), name: UIDevice.orientationDidChangeNotification, object: nil)
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(WhisperFactory.orientationDidChange),
+                                           name: UIDevice.orientationDidChangeNotification,
+                                           object: nil)
   }
 
   deinit {
-    NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
+    NotificationCenter.default.removeObserver(self,
+                                              name: UIDevice.orientationDidChangeNotification,
+                                              object: nil)
   }
 
   func craft(_ message: Message, navigationController: UINavigationController, action: WhisperAction) {
@@ -237,14 +242,23 @@ class WhisperFactory: NSObject {
 
     if let tableView = viewController.view as? UITableView
       , viewController is UITableViewController {
-      tableView.contentInset = UIEdgeInsets(top: tableView.contentInset.top + edgeInsetHeight, left: tableView.contentInset.left, bottom: tableView.contentInset.bottom, right: tableView.contentInset.right)
+        tableView.contentInset = UIEdgeInsets(top: tableView.contentInset.top + edgeInsetHeight,
+                                              left: tableView.contentInset.left,
+                                              bottom: tableView.contentInset.bottom,
+                                              right: tableView.contentInset.right)
     } else if let collectionView = viewController.view as? UICollectionView
       , viewController is UICollectionViewController {
-      collectionView.contentInset = UIEdgeInsets(top: collectionView.contentInset.top + edgeInsetHeight, left: collectionView.contentInset.left, bottom: collectionView.contentInset.bottom, right: collectionView.contentInset.right)
+        collectionView.contentInset = UIEdgeInsets(top: collectionView.contentInset.top + edgeInsetHeight,
+                                                   left: collectionView.contentInset.left,
+                                                   bottom: collectionView.contentInset.bottom,
+                                                   right: collectionView.contentInset.right)
     } else {
       for view in viewController.view.subviews {
         if let scrollView = view as? UIScrollView {
-          scrollView.contentInset = UIEdgeInsets(top: scrollView.contentInset.top + edgeInsetHeight, left: scrollView.contentInset.left, bottom: scrollView.contentInset.bottom, right: scrollView.contentInset.right)
+            scrollView.contentInset = UIEdgeInsets(top: scrollView.contentInset.top + edgeInsetHeight,
+                                                   left: scrollView.contentInset.left,
+                                                   bottom: scrollView.contentInset.bottom,
+                                                   right: scrollView.contentInset.right)
         }
       }
     }
@@ -281,7 +295,6 @@ extension WhisperFactory: UINavigationControllerDelegate {
 
     for subview in navigationController.navigationBar.subviews {
       if subview is WhisperView { navigationController.navigationBar.bringSubviewToFront(subview) }
-
       if subview.frame.maxY > maximumY && !(subview is WhisperView) {
         maximumY = subview.frame.maxY
       }

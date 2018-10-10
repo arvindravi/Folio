@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="BmZ-nW-RT5">
+                                <rect key="frame" x="137" y="283" width="101" height="101"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Folio" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXE-yH-oaT">
+                                <rect key="frame" x="16" y="578" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="zfF-rG-MD5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by Arvind Ravi for Bending Spoons" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14I-Hw-aaI">
+                                <rect key="frame" x="16" y="621" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zJf-yr-Wjg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BmZ-nW-RT5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4OZ-XQ-Auz"/>
+                            <constraint firstItem="hXE-yH-oaT" firstAttribute="leading" secondItem="14I-Hw-aaI" secondAttribute="leading" id="CH4-st-BFn"/>
+                            <constraint firstItem="hXE-yH-oaT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="RTt-5M-K4K"/>
+                            <constraint firstItem="BmZ-nW-RT5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="VcL-SK-olm"/>
+                            <constraint firstItem="hXE-yH-oaT" firstAttribute="trailing" secondItem="14I-Hw-aaI" secondAttribute="trailing" id="dE4-Wt-HBO"/>
+                            <constraint firstItem="hXE-yH-oaT" firstAttribute="centerX" secondItem="BmZ-nW-RT5" secondAttribute="centerX" id="m5A-Vl-WLe"/>
+                            <constraint firstItem="14I-Hw-aaI" firstAttribute="top" secondItem="hXE-yH-oaT" secondAttribute="bottom" constant="8" symbolic="YES" id="ooz-ah-f6K"/>
+                            <constraint firstItem="BmZ-nW-RT5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="263" id="oy8-kS-oai"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="14I-Hw-aaI" secondAttribute="bottom" constant="16" id="qdW-AU-bOt"/>
+                            <constraint firstItem="BmZ-nW-RT5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="y32-9s-1g1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="134" height="88"/>
+    </resources>
+</document>

@@ -172,7 +172,7 @@ open class WhistleFactory: UIViewController {
       }, completion: { _ in
         if let window = self.previousKeyWindow {
           window.isHidden = false
-          self.whistleWindow.windowLevel = UIWindow.Level.normal - 1
+          self.whistleWindow.windowLevel = UIWindow.Level.normal
           self.previousKeyWindow = nil
           window.rootViewController?.setNeedsStatusBarAppearanceUpdate()
         }
