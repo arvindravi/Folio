@@ -154,7 +154,6 @@ class CardCell: UITableViewCell {
   func configure(withIngredient ingredient: String) {
     selectionStyle = .none
     self.primaryTextLabel?.text = ingredient
-    self.primarySubtitleTextLabel.text = ""
   }
   
 }

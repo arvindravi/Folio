@@ -32,7 +32,7 @@ class CardViewController: UIViewController {
   
   private func animateTitleBarUp() {
     UIView.animate(withDuration: 0.4,
-                   delay: 0,
+                   delay: 3,
                    usingSpringWithDamping: 0.8,
                    initialSpringVelocity: 0.5,
                    options: .curveEaseInOut,
@@ -50,7 +50,7 @@ class CardViewController: UIViewController {
                    initialSpringVelocity: 0.5,
                    options: .curveEaseOut,
                    animations: {
-                    self.titleBar.frame.origin.y = self.initialTitleBarFrameY + 30 },
+                    self.titleBar.frame.origin.y = self.initialTitleBarFrameY },
                    completion: nil)
   }
   

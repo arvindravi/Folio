@@ -143,7 +143,6 @@ class RecipeTableViewController: UIViewController {
       case .failure(let error):
         self.isLoadingRecipes = false
         DispatchQueue.main.async {
-          print(error?.localizedDescription)
           self.tableView.displayError(error)
         }
       }
